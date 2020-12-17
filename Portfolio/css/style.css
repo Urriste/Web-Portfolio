@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	background-color: black;
+	color:white;
+	scroll-behavior: smooth;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.header{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+}
+
+.title{
+	font-size: 40px;
+	text-align: center;
+}
+
+.arrow{
+	margin: 50px 0 0 0;
+	font-size: 25px;
+}
+
+.arrow-btn{
+	text-decoration: none;
+}
+
+.yellow-span{
+	color:#fff5c0;
+	font-weight: 700;
+}
+
+.salmon-span{
+	color:#ff8585;
+	font-weight: 700;
+
+}
+
+.big-letter{
+	font-size: 200px;
+	font-weight: 700;
+	text-align: center;
+	margin: 75px 0 0 0;
+	text-shadow: 5px 5px #fff5c0, -5px -5px #ff8585;
+	font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+	height: 40px;
+	width: 110px;
+	text-decoration: none;
+	background-color: #ff8585;
+	padding: 10px;
+	text-align: center;
+}
+
+.row{
+	height: 1px;
+	width: 250px;
+	background-color: white;
+	margin:110px auto 0 auto;
+	border-radius: 2px;
+}
+
+.row-skills{
+	height: 1px;
+	width: 250px;
+	background-color: white;
+	margin:150px auto 0 auto;
+	border-radius: 2px;
+}
+
+
+.about-me{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.description-container{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.me-img{
+	width: 245px;
+	height: 230px;
+	margin: 50px 0 20px 0;
+}
+
+.about-me__title{
+	margin: 50px 0 0 0;
+	font-size: 40px;
+}
+
+.about-me__paragraph{
+	width: 245px;
+	font-size: 15px;
+	margin: 30px auto 0 auto;
+	font-weight: 100;
+}
+
+
+
+.jobs{
+	height: 100vh;
+	width: 70%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.skills{
+	height: 75vh;
+	width: 70%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.skills-title,
+.jobs-title{
+	margin: 50px 0 0 0;
+	font-size: 40px;	
+}
+
+.box-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px 0 0 0;
+}
+
+.box{
+	width: 120px;
+	height: 120px;
+	background-color: white;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-weight: 500;
+	transition: all 1s;
+}
+
+.skill-logo{
+	font-size: 70px;
+	background: none;	
+}
+
+.fa-html5{
+	color:#e34f26
+}
+
+.fa-css3-alt{
+	color: #002561;
+}
+
+.fa-js{
+	color:#f7df1e;
+}
+
+.fa-bootstrap{
+	color: purple;
+}
+
+
+.box-img{
+	width: 160px;
+	height: 120px;
+	transition: all 1s;
+}
+
+.jobs-box{
+	width: 160px;
+	height: 120px;
+	margin: 10px;
+	transition: all 1s;
+}
+
+.jobs-box a{
+	text-decoration: none;
+}
+
+.jobs-box:hover,
+.box-img:hover{
+	width: 210px;
+	height: 160px;
+}
+
+.icons-container{
+	margin: 25px 0 0;
+}
+
+
+.social-icons{
+	text-decoration: none;
+	font-size: 25px;
+	margin: 0 10px 0 0;
+}
+
+@media only screen and (min-width : 700px){
+	.me-img{
+		width: 280px;
+		height: 280px;
+	}
+
+	.about-me__paragraph{
+		width: 260px;
+		font-size: 16px;
+	}
+
+	.box
+	{
+		height: 150px;
+		width: 200px;
+		margin: 10px 10px 0 0;
+
+	}
+
+	.
+
+}
+
+
+@media screen and (min-width: 1205px){
+	.title{
+		font-size: 55px;
+	}
+	.big-letter{
+		font-size: 220px;
+	}
+
+	.me-img{
+		width: 330px;
+		height: 330px;
+	}
+
+	.about-me__paragraph{
+		width: 245px;
+		font-size: 17.2px;
+		margin: 30px 0 0 200px;
+	}
+
+	.box
+	{
+		height: 220px;
+		width: 330px;
+		margin: 10px 10px 0 0;
+
+	}
+
+	.skill-logo{
+		font-size: 100px;
+	}
+
+	.skills-title,
+	.jobs-title,
+	.about-me__title{
+	margin: 50px 0 0 0;
+	font-size: 50px;	
+	}
+
+
+	.box-img,
+	.jobs-box{
+		height: 240px;
+		width: 330px;
+	}	
+
+	.box-img:hover,
+	.jobs-box:hover{
+		height: 250px;
+		width: 350px;
+	}
+}
