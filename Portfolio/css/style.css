@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500;700&display=swap');
 
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	background-color: black;
-	color:white;
+	font-family: 'Roboto Mono', monospace;
+	background-color: #121211;
+	color:#d31f23;
 	scroll-behavior: smooth;
 }
 
@@ -29,39 +28,41 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-direction:column;
+
 }
 
 .title{
 	font-size: 40px;
+	font-weight: 300;
 	text-align: center;
+	color:#d31f23;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .arrow{
 	margin: 50px 0 0 0;
 	font-size: 25px;
+	color:white;
 }
 
 .arrow-btn{
 	text-decoration: none;
+	color:white;
 }
 
-.yellow-span{
-	color:#fff5c0;
-	font-weight: 700;
-}
-
-.salmon-span{
-	color:#ff8585;
-	font-weight: 700;
-
+.span{
+	color:#690808;
+	font-weight: 300;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .big-letter{
 	font-size: 200px;
 	font-weight: 700;
 	text-align: center;
+	color: white;
 	margin: 75px 0 0 0;
-	text-shadow: 5px 5px #fff5c0, -5px -5px #ff8585;
+	text-shadow: 2px 2px #d31f23, -2px -2px #00ff66;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -72,6 +73,7 @@ body{
 	background-color: #ff8585;
 	padding: 10px;
 	text-align: center;
+	color:white;
 }
 
 .row{
@@ -105,25 +107,31 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	align-items: center;	
+	font-family: 'Roboto Mono', monospace;
 }
 
 .me-img{
 	width: 245px;
 	height: 230px;
 	margin: 50px 0 20px 0;
+	border-radius: 10px;
 }
 
 .about-me__title{
 	margin: 50px 0 0 0;
-	font-size: 40px;
+	font-size: 35px;
+	color:#d31f23;
+	font-weight: 300;
 }
 
 .about-me__paragraph{
 	width: 245px;
-	font-size: 15px;
+	font-size: 11px !important;
 	margin: 30px auto 0 auto;
 	font-weight: 100;
+	font-family: 'Roboto Mono', monospace;
+	color:white;
 }
 
 
@@ -148,6 +156,8 @@ body{
 .jobs-title{
 	margin: 50px 0 0 0;
 	font-size: 40px;	
+	color:#d31f23;
+	font-weight: 300;
 }
 
 .box-container{
@@ -160,15 +170,17 @@ body{
 .box{
 	width: 120px;
 	height: 120px;
-	background-color: white;
+	background-color: none;
+	border:1px solid white;
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	color: black;
+	color: white;
 	font-weight: 500;
 	transition: all 1s;
+	border-radius: 10px;
 }
 
 .skill-logo{
@@ -194,9 +206,12 @@ body{
 
 
 .box-img{
-	width: 160px;
-	height: 120px;
+	width: 150px;
+	height: 110px;
 	transition: all 1s;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 10px;
 }
 
 .jobs-box{
@@ -223,8 +238,9 @@ body{
 
 .social-icons{
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 	margin: 0 10px 0 0;
+	color:white;
 }
 
 @media only screen and (min-width : 700px){
@@ -235,7 +251,7 @@ body{
 
 	.about-me__paragraph{
 		width: 260px;
-		font-size: 16px;
+		font-size: 13px;
 	}
 
 	.box
@@ -246,7 +262,9 @@ body{
 
 	}
 
-	.
+	.social-icons{
+		font-size: 25px;
+	}
 
 }
 
@@ -266,7 +284,7 @@ body{
 
 	.about-me__paragraph{
 		width: 245px;
-		font-size: 17.2px;
+		font-size: 15.5px !important;
 		margin: 30px 0 0 200px;
 	}
 
